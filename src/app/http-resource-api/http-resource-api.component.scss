@@ -1,0 +1,48 @@
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: orange;
+  padding: 2rem;
+}
+.empty {
+  padding: 50px;
+  background: #ddd;
+  text-align: center;
+}
+
+.error {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: red;
+  color: #fff;
+  font-size: 18px;
+}
+img {
+  margin: 5px;
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.mat-mdc-form-field {
+  display: block !important;
+  width: 300px;
+  margin: 0 auto;
+}
+ul.category-list {
+  li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+}
