@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ResourceApiComponent } from './resource-api.component';
+import { LinkedSignalComponent } from './linked-signal.component';
 
-describe('ResourceApiComponent', () => {
-  let component: ResourceApiComponent;
-  let fixture: ComponentFixture<ResourceApiComponent>;
+describe('LinkedSignalComponent', () => {
+  let component: LinkedSignalComponent;
+  let fixture: ComponentFixture<LinkedSignalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ResourceApiComponent]
+      imports: [LinkedSignalComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ResourceApiComponent);
+    fixture = TestBed.createComponent(LinkedSignalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

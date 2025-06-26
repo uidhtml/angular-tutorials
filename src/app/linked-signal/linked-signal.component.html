@@ -1,0 +1,21 @@
+<h1>linkedSignal()</h1>
+<div style="display: flex; justify-content: center">
+  <ul>
+    @for(fruit of fruits(); track $index; let i = $index){
+    <li
+      onkeypress=""
+      (click)="selectedFruit.set(fruit)"
+      [class.selected]="selectFruit(fruit)"
+    >
+      {{ fruit }}
+    </li>
+    }
+  </ul>
+</div>
+<p style="text-align: center; margin-bottom: 10px">
+  Selected fruit: {{ selectedFruit() }}
+</p>
+<div class="button-wrapper">
+  <button mat-raised-button (click)="loadMoreFruits()">Load more fruits</button>
+  <button mat-raised-button (click)="loadLessFruits()">Load less fruits</button>
+</div>
