@@ -4,8 +4,8 @@ import { ResourceApiComponent } from './resource-api/resource-api.component';
 import { HttpResourceApiComponent } from './http-resource-api/http-resource-api.component';
 
 export const routes: Routes = [
-  { path: 'linked-signal', component: LinkedSignalComponent },
+  { path: 'linkedSignal', component: LinkedSignalComponent },
   { path: 'httpResourceAPI', component: HttpResourceApiComponent },
   { path: 'resourceAPI', component: ResourceApiComponent },
-  { path: '', redirectTo: '/linked-signal', pathMatch: 'full' },
+  { path: '', redirectTo: '/linkedSignal', pathMatch: 'full' },
 ];
