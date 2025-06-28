@@ -1,5 +1,5 @@
-<h1>linkedSignal()</h1>
-<div style="display: flex; justify-content: center">
+<h2 class="inner-page-topic-heading">linkedSignal()</h2>
+<div>
   <ul>
     @for(fruit of fruits(); track $index; let i = $index){
     <li
@@ -12,10 +12,12 @@
     }
   </ul>
 </div>
-<p style="text-align: center; margin-bottom: 10px">
-  Selected fruit: {{ selectedFruit() }}
-</p>
+<p style="margin-bottom: 1rem">Selected fruit: {{ selectedFruit() }}</p>
 <div class="button-wrapper">
-  <button mat-raised-button (click)="loadMoreFruits()">Load more fruits</button>
-  <button mat-raised-button (click)="loadLessFruits()">Load less fruits</button>
+  <button matButton="filled" color="primary" (click)="loadMoreFruits()">
+    Load more fruits
+  </button>
+  <button matButton="filled" color="primary" (click)="loadLessFruits()">
+    Load less fruits
+  </button>
 </div>

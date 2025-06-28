@@ -1,11 +1,11 @@
 .mat-mdc-list {
   --mat-list-list-item-label-text-color: #fff;
   --mat-list-list-item-container-shape: 5px;
-  --mat-list-list-item-supporting-text-color: #949494;
 
   .mat-mdc-list-item {
+    cursor: pointer;
     &:hover {
-      --mat-list-list-item-hover-label-text-color: #fff;
+      --mat-list-list-item-hover-label-text-color: yellow;
       background-color: #333;
     }
     &:focus {

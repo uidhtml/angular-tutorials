@@ -1,0 +1,9 @@
+<h2>List of Examples</h2>
+
+<mat-list>
+  @for(example of listOfExamples; track $index){
+  <mat-list-item [routerLink]="example.link">
+    {{ $index + 1 }}. {{ example.topic }}</mat-list-item
+  >
+  }
+</mat-list>
