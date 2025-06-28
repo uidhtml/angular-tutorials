@@ -1,10 +1,18 @@
-<h1>HttpResource API</h1>
-<mat-form-field appearance="outline">
-  <mat-label>Search User</mat-label>
-  <input (input)="searchUser($event)" id="user" type="text" matInput />
-</mat-form-field>
-<button mat-button (click)="users.reload()">Reload User data</button>
-<button mat-button (click)="addUser()">Add User</button>
+<h2>HttpResource API</h2>
+<div class="">
+  <mat-form-field appearance="outline">
+    <mat-label>Search User</mat-label>
+    <input (input)="searchUser($event)" id="user" type="text" matInput />
+  </mat-form-field>
+</div>
+<div class="button-wrapper">
+  <button matButton="filled" color="primary" (click)="users.reload()">
+    Reload User data
+  </button>
+  <button matButton="filled" color="primary" (click)="addUser()">
+    Add User
+  </button>
+</div>
 <div>
   {{ users.error()?.message }}
   <!-- @if(users.error(); as err){
